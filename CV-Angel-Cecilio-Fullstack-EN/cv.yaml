@@ -1,0 +1,82 @@
+# ==============================================================================
+# CV - FULLSTACK EN
+# ==============================================================================
+
+cv:
+  # ----------------------------------------------------------------------------
+  # CONTACT INFORMATION
+  # ----------------------------------------------------------------------------
+  name: Angel Gerardo Cecilio Rodríguez
+  headline: Full-Stack Software Engineer
+  location: Puebla, Mexico
+  email: angel.cecilio.dev@gmail.com
+  phone: "+52 238 194 2612"
+  social_networks:
+    - network: LinkedIn
+      username: angel-scatman
+    - network: GitHub
+      username: angelscatman
+  
+  # ----------------------------------------------------------------------------
+  # CV CONTENT
+  # ----------------------------------------------------------------------------
+  sections:
+    Professional Profile:
+      - Full-Stack Software Engineer focused on developing production-ready systems tailored to solve real-world operational challenges. Experienced in designing intuitive UX/UI interfaces and building structured backend services that prioritize clean architecture and code maintainability. Proficient in the JavaScript ecosystem (TypeScript, React, Node.js) and cross-platform mobile development (Kotlin, Flutter), including hardware and third-party integrations. Adept at workflow automation. Seeking to join tech-driven teams, with availability for remote setups or relocation, to deliver valuable code that optimizes operational efficiency.
+    
+    Professional Experience:
+      - company: Abarrotera Hidalgo de Tehuacán (Bitala Division)
+        position: Full Stack Developer
+        date: 'July 2024 – January 2026'
+        location: Puebla, Mexico
+        summary: "Development department responsible for the corporate group's digitalization, creating custom tech solutions for logistics and fleet maintenance."
+        highlights:
+          - Developed ERP modules (React, Node.js, Express), implementing WebSockets for real-time logistics tracking within distribution centers and REST APIs for transactional operations.
+          - Integrated automated printing hardware (Zebra) into the workflow, developing preview modules for warehouse inventory control and operational asset management.
+          - Built an independent Python microservice (FastAPI) integrating AI models (DeepSeek-V3) and the pdfplumber library to process bank statements, generating automated JSON structures and reducing manual data entry.
+          - Developed native and cross-platform mobile applications (Kotlin, Swift, Flutter) to digitize logistics operations and fleet maintenance, implementing geolocation, webhooks, and photographic evidence workflows.
+          - Refactored critical functions into independent services, reducing the main system's coupling and improving long-term maintainability.
+          - Standardized development environments using Docker containers, ensuring consistent execution across the technical team.
+      
+      - company: Abarrotera Hidalgo de Tehuacán (Bitala Division)
+        position: Backend and Mobile Developer (Internship)
+        date: 'March 2024 – July 2024'
+        location: Puebla, Mexico
+        summary: "Key Project: End-to-end digital transformation for a Physiotherapy Center associated with the corporate group."
+        highlights:
+          - Architected and programmed a centralized appointment management system, replacing manual, paper-based tracking.
+          - Built a native Android application in Kotlin, focused on usability and patient accessibility.
+          - Implemented the backend architecture using PHP and MySQL, managing real-time availability and scheduling.
+          - Integrated an automated notification system via Firebase to reduce the no-show appointment rate.
+    
+    Education:
+      - company: Instituto Tecnológico de Tehuacán (TecNM)
+        position: Bachelor's Degree in Computer Systems Engineering
+        date: 'August 2019 – December 2024'
+        location: Puebla, Mexico
+        highlights:
+          - 'Status: Degree in progress.'
+          - 'Specialty Areas: Software Engineering, Data Structures, Object-Oriented Programming (Java).'
+      
+      - company: Centro de Bachillerato Tecnológico Industrial y de Servicios No. 229
+        position: Technician in Programming
+        date: 'August 2016 – July 2019'
+        location: Puebla, Mexico
+        highlights:
+          - "Outstanding Achievement: Finalist in the 20th National Prototype Contest (2018) with 'U-API', a custom desktop software built in C# for English language learning."
+    
+    Additional Skills:
+      - label: Programming Languages
+        details: "JavaScript (TypeScript), Kotlin, PHP, Python, SQL. (Academic/Project foundations: C#, Java, Swift)"
+      - label: Frameworks & Libraries
+        details: React.js, Node.js (Express), Flutter, FastAPI, OpenCV
+      - label: Infrastructure & Tools
+        details: Docker, Git/GitHub, Postman, Linux, WebSockets
+      - label: Databases
+        details: MySQL, SQLite, Firebase
+      - label: UX/UI Design
+        details: Figma (Research, Wireframing, Prototyping)
+      - label: Languages
+        details: Spanish (Native), English (Advanced technical reading, conversational)
+      - label: Core Competencies
+        details: Modular Architecture Design, Hardware Integration, Operational Problem Solving, Adaptability
