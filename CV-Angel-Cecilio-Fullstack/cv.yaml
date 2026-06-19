@@ -1,0 +1,82 @@
+# ==============================================================================
+# CV - FULLSTACK ES
+# ==============================================================================
+
+cv:
+  # ----------------------------------------------------------------------------
+  # DATOS DE CONTACTO
+  # ----------------------------------------------------------------------------
+  name: Angel Gerardo Cecilio Rodríguez
+  headline: Ingeniero de Software Full-Stack
+  location: Puebla, México
+  email: angel.cecilio.dev@gmail.com
+  phone: "+52 238 194 2612"
+  social_networks:
+    - network: LinkedIn
+      username: angel-scatman
+    - network: GitHub
+      username: angelscatman
+  
+  # ----------------------------------------------------------------------------
+  # CONTENIDO DEL CV
+  # ----------------------------------------------------------------------------
+  sections:
+    Perfil Profesional:
+      - Ingeniero de Software Full-Stack enfocado en el desarrollo de sistemas para entornos de producción, orientado a resolver problemas operativos reales. Experiencia en el diseño de interfaces UX/UI intuitivas y en la construcción de servicios backend estructurados que priorizan la arquitectura limpia y la mantenibilidad del código. Dominio del ecosistema JavaScript (TypeScript, React, Node.js) y desarrollo móvil multiplataforma (Kotlin, Flutter), incluyendo integraciones de hardware y servicios de terceros. Hábil en la automatización de flujos de trabajo. Busco integrarme a equipos tecnológicos, con disponibilidad para esquemas remotos o reubicación, donde pueda aportar código de valor que optimice la eficiencia operativa.
+    
+    Experiencia Profesional:
+      - company: Abarrotera Hidalgo de Tehuacán (División Bitala)
+        position: Desarrollador Full Stack
+        date: 'Julio 2024 – Enero 2026'
+        location: Puebla, México
+        summary: "Departamento de desarrollo encargado de la digitalización del grupo empresarial, creando soluciones tecnológicas a medida para las áreas de logística y mantenimiento automotriz."
+        highlights:
+          - Desarrollé módulos del ERP (React, Node.js, Express), implementando WebSockets para la trazabilidad logística en tiempo real dentro de los centros de distribución y APIs REST para operaciones transaccionales.
+          - Integré hardware de impresión automatizada (Zebra) al flujo de trabajo, desarrollando módulos de previsualización para el control de inventario en almacén y la gestión de activos operativos.
+          - Construí un microservicio independiente en Python (FastAPI) integrando modelos de IA (DeepSeek-V3) y la librería pdfplumber para procesar estados de cuenta, generando estructuras JSON automatizadas y reduciendo el registro manual.
+          - Desarrollé aplicaciones móviles nativas y multiplataforma (Kotlin, Swift, Flutter) para digitalizar la operación logística y el mantenimiento de parque vehicular, implementando geolocalización, webhooks y flujos de evidencia fotográfica.
+          - Refactoricé funciones críticas hacia servicios independientes, reduciendo el acoplamiento del sistema principal y mejorando su mantenibilidad a largo plazo.
+          - Estandaricé los entornos de desarrollo mediante contenedores Docker, asegurando consistencia en la ejecución para el equipo técnico.
+      
+      - company: Abarrotera Hidalgo de Tehuacán (División Bitala)
+        position: Desarrollador Backend y Móvil (Prácticas)
+        date: 'Marzo 2024 – Julio 2024'
+        location: Puebla, México
+        summary: "Proyecto principal: Digitalización integral de un centro de Fisioterapia asociado al grupo empresarial."
+        highlights:
+          - Diseñé y programé un sistema centralizado de gestión de citas, sustituyendo el seguimiento manual en papel.
+          - Construí una aplicación nativa para Android en Kotlin, enfocada en la usabilidad y accesibilidad para los pacientes.
+          - Implementé la arquitectura backend con PHP y MySQL, gestionando la disponibilidad y los horarios en tiempo real.
+          - Integré un sistema de notificaciones automatizadas a través de Firebase para disminuir el índice de citas perdidas.
+    
+    Educación:
+      - company: Instituto Tecnológico de Tehuacán (TecNM)
+        position: Licenciatura en Ingeniería en Sistemas Computacionales
+        date: 'Agosto 2019 – Diciembre 2024'
+        location: Puebla, México
+        highlights:
+          - 'Estado: En proceso de titulación.'
+          - 'Áreas de especialidad: Ingeniería de Software, Estructuras de Datos, Programación Orientada a Objetos (Java).'
+      
+      - company: Centro de Bachillerato Tecnológico Industrial y de Servicios No. 229
+        position: Técnico en Programación
+        date: 'Agosto 2016 – Julio 2019'
+        location: Puebla, México
+        highlights:
+          - "Logro destacado: Finalista en el 20° Concurso Nacional de Prototipos (2018) con 'U-API', un software de escritorio desarrollado en C# para el aprendizaje del idioma inglés."
+    
+    Habilidades Adicionales:
+      - label: Lenguajes de Programación
+        details: "JavaScript (TypeScript), Kotlin, PHP, Python, SQL. (Bases académicas/proyectos: C#, Java, Swift)"
+      - label: Frameworks y Librerías
+        details: React.js, Node.js (Express), Flutter, FastAPI, OpenCV
+      - label: Infraestructura y Herramientas
+        details: Docker, Git/GitHub, Postman, Linux, WebSockets
+      - label: Bases de Datos
+        details: MySQL, SQLite, Firebase
+      - label: Diseño UX/UI
+        details: Figma (Investigación, Wireframing, Prototipado)
+      - label: Idiomas
+        details: Español (Nativo), Inglés (Lectura técnica avanzada, nivel conversacional)
+      - label: Competencias Principales
+        details: Diseño de arquitectura modular, Integración de hardware, Resolución de problemas operativos, Adaptabilidad
