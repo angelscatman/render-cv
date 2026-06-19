@@ -62,6 +62,19 @@ Ejemplo:
 
 El script procesa los archivos y guarda el PDF generado dentro de la carpeta `PDFs/`.
 
+## Renderizado con GitHub Actions
+
+Este repositorio incluye un workflow en `.github/workflows/render.yml` para generar los PDFs automáticamente.
+
+- Se ejecuta en cada push a `main`.
+- Puede ejecutarse manualmente con `workflow_dispatch`.
+- Publica los PDFs generados como artifacts del job.
+
+Ejecución manual:
+
+- `profile: all` genera todos los perfiles.
+- `profile: CV-Nombre-De-La-Version` genera solo un perfil.
+
 ## Notas
 
 - Los PDFs finales y los archivos temporales no se incluyen en el repositorio porque están configurados en `.gitignore`.
