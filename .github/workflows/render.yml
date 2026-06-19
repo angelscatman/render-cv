@@ -1,0 +1,81 @@
+name: Generate Resumes
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+    inputs:
+      profile:
+        description: 'Target profile directory or "all"'
+        required: false
+        default: 'all'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Source Code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set Execution Permissions
+        run: chmod +x render.sh
+
+      - name: Render Target Profiles
+        run: |
+          set -euo pipefail
+
+          TARGET_PROFILE="${{ github.event.inputs.profile }}"
+          EVENT_NAME="${{ github.event_name }}"
+
+          if [ "$EVENT_NAME" = "workflow_dispatch" ] && [ "$TARGET_PROFILE" != "all" ] && [ -n "$TARGET_PROFILE" ]; then
+            if [ -d "$TARGET_PROFILE" ] && [ -f "$TARGET_PROFILE/cv.yaml" ]; then
+              echo "Compiling profile: $TARGET_PROFILE..."
+              ./render.sh "$TARGET_PROFILE"
+            else
+              echo "Error: Directory $TARGET_PROFILE is missing or lacks cv.yaml"
+              exit 1
+            fi
+          elif [ "$EVENT_NAME" = "push" ]; then
+            BEFORE_SHA="${{ github.event.before }}"
+            AFTER_SHA="${{ github.sha }}"
+
+            if [ -n "$BEFORE_SHA" ] && [ "$BEFORE_SHA" != "0000000000000000000000000000000000000000" ]; then
+              CHANGED_FILES=$(git diff --name-only "$BEFORE_SHA" "$AFTER_SHA" || true)
+            else
+              CHANGED_FILES=$(git ls-files || true)
+            fi
+
+            CHANGED_PROFILES=$(printf '%s\n' "$CHANGED_FILES" | grep '^CV-[^/]*/' | cut -d/ -f1 | sort -u || true)
+
+            if printf '%s\n' "$CHANGED_FILES" | grep -Eq '(^|/)render\.sh$|(^|/)Dockerfile$'; then
+              CHANGED_PROFILES=$(ls -d CV-*/ 2>/dev/null | sed 's#/$##' || true)
+            fi
+            
+            if [ -z "$CHANGED_PROFILES" ]; then
+              echo "No profiles modified. Skipping render."
+            else
+              for PROFILE in $CHANGED_PROFILES; do
+                if [ -d "$PROFILE" ] && [ -f "$PROFILE/cv.yaml" ]; then
+                  echo "Compiling profile: $PROFILE..."
+                  ./render.sh "$PROFILE"
+                fi
+              done
+            fi
+          else
+            for DIR in CV-*/ ; do
+              PROFILE=$(basename "$DIR")
+              if [ -f "$DIR/cv.yaml" ]; then
+                echo "Compiling profile: $PROFILE..."
+                ./render.sh "$PROFILE"
+              fi
+            done
+          fi
+
+      - name: Upload PDF Artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: Generated_Resumes
+          path: PDFs/*.pdf
