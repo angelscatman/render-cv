@@ -1,0 +1,84 @@
+# ==============================================================================
+# CV - INGENIERÍA EN SISTEMAS / TI
+# ==============================================================================
+
+cv:
+  # ----------------------------------------------------------------------------
+  # DATOS DE CONTACTO
+  # ----------------------------------------------------------------------------
+  name: Angel Gerardo Cecilio Rodríguez
+  headline: Ingeniero en Sistemas Computacionales
+  location: Puebla, México
+  email: angel.cecilio.dev@gmail.com
+  phone: "+52 238 194 2612"
+  social_networks:
+    - network: LinkedIn
+      username: angel-scatman
+    - network: GitHub
+      username: angelscatman
+  
+  # ----------------------------------------------------------------------------
+  # CONTENIDO DEL CV
+  # ----------------------------------------------------------------------------
+  sections:
+    Perfil Profesional:
+      - "Ingeniero en Sistemas Computacionales con experiencia integral en el ciclo de vida tecnológico, desde la administración de infraestructura hasta el desarrollo de software. Capaz de diagnosticar y mantener redes y hardware, así como de diseñar aplicaciones orientadas a la optimización de procesos operativos. Sólida trayectoria en soporte técnico multinivel y recuperación de sistemas operativos (Linux/Windows). Acostumbrado a participar en el levantamiento de requerimientos, integración de hardware corporativo y capacitación de usuarios. Busco integrarme a equipos de TI con disponibilidad de reubicación, aportando una visión completa que conecte la estabilidad operativa con soluciones de software eficientes."
+    
+    Experiencia Profesional:
+      - company: Abarrotera Hidalgo de Tehuacán (División Bitala)
+        position: Desarrollador / Soporte TI
+        date: 'Julio 2024 – Enero 2026'
+        location: Puebla, México
+        summary: "Departamento tecnológico encargado de la digitalización y soporte de infraestructura operativa para las áreas de logística y mantenimiento automotriz."
+        highlights:
+          - Proporcioné soporte técnico de Nivel 1 y 2 al personal operativo, asegurando la disponibilidad de los sistemas y la correcta adopción de nuevas herramientas digitales.
+          - Integré hardware de impresión automatizada (Zebra) a la red del almacén, desarrollando módulos para el control de inventario y asegurando su compatibilidad con el sistema central.
+          - Administré y estandaricé entornos de ejecución utilizando contenedores Docker para facilitar el despliegue de soluciones internas.
+          - Desarrollé aplicaciones móviles (Kotlin/Flutter) para digitalizar los reportes de mantenimiento de flotillas, implementando funciones nativas (GPS/Cámara) para validación en campo.
+          - Automaticé procesos administrativos mediante un microservicio en Python (FastAPI/IA) para la extracción de datos, reduciendo el tiempo de captura manual.
+      
+      - company: Taller "Tienda de Tecnología"
+        position: Técnico en Reparación y Soporte
+        date: 'Agosto 2018 – Enero 2024'
+        location: Puebla, México
+        summary: "Soporte técnico especializado y atención directa al cliente a nivel hardware y software."
+        highlights:
+          - Diagnostiqué y reparé un promedio de 8 a 12 equipos semanales (computadoras, laptops y móviles), gestionando el ciclo completo desde la recepción hasta la entrega.
+          - Resolví fallas críticas a nivel sistema operativo, como en la recuperación y gestión de arranque en entornos Linux y Windows, priorizando siempre la integridad de los datos.
+          - Realicé la instalación de software corporativo, configuración de redes locales y mantenimiento preventivo adaptado a los requerimientos técnicos de cada cliente.
+          - Gestioné la cotización de servicios, adquisición de refacciones con proveedores y el control de inventario del local.
+      
+      - company: Abarrotera Hidalgo de Tehuacán (División Bitala)
+        position: Desarrollador y Soporte (Prácticas)
+        date: 'Marzo 2024 – Julio 2024'
+        location: Puebla, México
+        summary: "Proyecto: Digitalización integral de un Centro de Fisioterapia asociado al grupo empresarial."
+        highlights:
+          - Implementé un sistema centralizado de gestión de citas (PHP/MySQL), reemplazando los registros manuales por una base de datos segura y auditable.
+          - Configuré e integré el servicio de Firebase para el envío de notificaciones automáticas, optimizando la comunicación de la clínica.
+    
+    Educación:
+      - company: Instituto Tecnológico de Tehuacán (TecNM)
+        position: Licenciatura en Ingeniería en Sistemas Computacionales
+        date: 'Agosto 2019 – Diciembre 2024'
+        location: Puebla, México
+        highlights:
+          - 'Estado: En proceso de titulación.'
+          - 'Áreas de enfoque: Arquitectura de Computadoras, Sistemas Operativos, Redes y Desarrollo de Software.'
+      
+      - company: Centro de Bachillerato Tecnológico Industrial y de Servicios No. 229
+        position: Técnico en Programación
+        date: 'Agosto 2016 – Julio 2019'
+        location: Puebla, México
+        highlights:
+          - "Logro destacado: Finalista Nacional en el 20° Concurso de Prototipos (2018)."
+    
+    Habilidades Técnicas:
+      - label: Soporte e Infraestructura
+        details: Mantenimiento de hardware, Recuperación de particiones y bootloaders, Administración Linux/Windows, Redes locales, Trato con proveedores.
+      - label: Programación y BD
+        details: JavaScript (TypeScript), Kotlin, Python, PHP, C#, Java, MySQL, SQLite.
+      - label: Frameworks y Entornos
+        details: React.js, Node.js, Flutter, Docker, Git/GitHub, Terminal (Bash/Zsh).
+      - label: Herramientas Extras
+        details: Microsoft Office (Excel), Figma, Postman.
