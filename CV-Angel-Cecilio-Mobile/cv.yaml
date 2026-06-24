@@ -1,0 +1,83 @@
+# ==============================================================================
+# CV - FULLSTACK / MOBILE ES
+# ==============================================================================
+
+cv:
+  # ----------------------------------------------------------------------------
+  # DATOS DE CONTACTO
+  # ----------------------------------------------------------------------------
+  name: Angel Gerardo Cecilio Rodríguez
+  headline: Ingeniero de Software Móvil
+  location: Puebla, México
+  email: angel.cecilio.dev@gmail.com
+  phone: "+52 238 194 2612"
+  social_networks:
+    - network: LinkedIn
+      username: angel-scatman
+    - network: GitHub
+      username: angelscatman
+  
+  # ----------------------------------------------------------------------------
+  # CONTENIDO DEL CV
+  # ----------------------------------------------------------------------------
+  sections:
+    Perfil Profesional:
+      - Ingeniero de Software orientado al desarrollo móvil, con experiencia en aplicaciones nativas Android y soluciones multiplataforma para entornos de producción, enfocado en resolver problemas operativos reales. He participado en la construcción de aplicaciones con Kotlin y Flutter, integrando consumo de APIs REST, geolocalización, notificaciones y flujos de evidencia fotográfica. Cuento además con base en el ecosistema web y backend (TypeScript, React, Node.js) para dar soporte a soluciones completas cuando el proyecto lo requiere. Busco integrarme a equipos tecnológicos, con disponibilidad para esquemas remotos o reubicación, donde pueda aportar soluciones móviles estables, mantenibles y alineadas con la operación real.
+    
+    Experiencia Profesional:
+      - company: Abarrotera Hidalgo de Tehuacán (División Bitala)
+        position: Desarrollador Full-Stack / Mobile
+        date: 'Julio 2024 – Enero 2026'
+        location: Puebla, México
+        summary: "Departamento de desarrollo encargado de la digitalización del grupo empresarial, creando soluciones tecnológicas a medida para las áreas de logística y mantenimiento automotriz."
+        highlights:
+          - Desarrollé aplicaciones móviles nativas y multiplataforma (Kotlin, Swift, Flutter) para digitalizar la operación logística y el mantenimiento del parque vehicular, implementando geolocalización, webhooks, manejo de JSON y flujos de evidencia fotográfica.
+          - Brindé soporte en la integración de flujos de trabajo móviles, interactuando con entornos de desarrollo como Xcode para ajustes funcionales en iOS y Android Studio.
+          - Desarrollé módulos del ERP (React, Node.js, Express), implementando WebSockets para la trazabilidad logística en tiempo real dentro de los centros de distribución y APIs RESTful para la integración de servicios móviles.
+          - Construí un microservicio independiente en Python (FastAPI) integrando modelos de IA (DeepSeek-V3) y la librería pdfplumber para procesar estados de cuenta, generando estructuras JSON automatizadas.
+          - Integré hardware de impresión automatizada (Zebra) al flujo de trabajo, desarrollando módulos de previsualización para el control de inventario en almacén.
+          - Refactoricé funciones críticas hacia servicios independientes, reduciendo el acoplamiento del sistema principal y mejorando su mantenibilidad a largo plazo.
+          - Estandaricé los entornos de desarrollo mediante contenedores Docker y control de versiones con Git, asegurando consistencia en la ejecución para el equipo técnico.
+      
+      - company: Abarrotera Hidalgo de Tehuacán (División Bitala)
+        position: Desarrollador Backend y Móvil (Prácticas)
+        date: 'Marzo 2024 – Julio 2024'
+        location: Puebla, México
+        summary: "Proyecto principal: Digitalización integral de un centro de Fisioterapia asociado al grupo empresarial."
+        highlights:
+          - Construí una aplicación nativa para Android en Kotlin, manejando el ciclo de vida de la app y enfocada en la usabilidad y accesibilidad para los pacientes.
+          - Diseñé y programé un sistema centralizado de gestión de citas, sustituyendo el seguimiento manual en papel.
+          - Implementé la arquitectura backend con PHP y MySQL, gestionando la disponibilidad, el consumo de datos y los horarios en tiempo real.
+          - Integré un sistema de notificaciones automatizadas a través de Firebase para disminuir el índice de citas perdidas.
+    
+    Educación:
+      - company: Instituto Tecnológico de Tehuacán (TecNM)
+        position: Licenciatura en Ingeniería en Sistemas Computacionales
+        date: 'Agosto 2019 – Diciembre 2024'
+        location: Puebla, México
+        highlights:
+          - 'Estado: En proceso de titulación (Comprobable).'
+          - 'Áreas de especialidad: Ingeniería de Software, Estructuras de Datos, Programación Orientada a Objetos (Java).'
+      
+      - company: Centro de Bachillerato Tecnológico Industrial y de Servicios No. 229
+        position: Técnico en Programación
+        date: 'Agosto 2016 – Julio 2019'
+        location: Puebla, México
+        highlights:
+          - "Logro destacado: Finalista en el 20° Concurso Nacional de Prototipos (2018) con 'U-API', un software de escritorio desarrollado en C# para el aprendizaje del idioma inglés."
+    
+    Habilidades Adicionales:
+      - label: Lenguajes de Programación
+        details: "Kotlin, JavaScript (TypeScript), PHP, Python, SQL. (Bases académicas/mantenimiento: Java, Swift, C#)"
+      - label: Ecosistema Móvil y Frameworks
+        details: Android SDK, View System (XML), Flutter, React.js, Node.js (Express), FastAPI
+      - label: Infraestructura y Herramientas
+        details: Git/GitHub, Xcode, Android Studio, Docker, Postman, Linux, WebSockets, APIs RESTful
+      - label: Bases de Datos y Datos
+        details: MySQL, SQLite, Firebase, JSON (Gson/Moshi)
+      - label: Diseño UX/UI
+        details: Figma (Investigación, Wireframing, Prototipado)
+      - label: Idiomas
+        details: Español (Nativo), Inglés (Lectura técnica avanzada, nivel conversacional)
+      - label: Competencias Principales
+        details: Arquitectura limpia (Clean Architecture), Integración de hardware, Resolución de problemas operativos, Adaptabilidad
