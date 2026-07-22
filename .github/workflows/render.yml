@@ -13,6 +13,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
     steps:
       - name: Checkout Source Code
         uses: actions/checkout@v4
@@ -47,10 +50,10 @@ jobs:
               CHANGED_FILES=$(git ls-files || true)
             fi
 
-            CHANGED_PROFILES=$(printf '%s\n' "$CHANGED_FILES" | grep '^CV-[^/]*/' | cut -d/ -f1 | sort -u || true)
+            CHANGED_PROFILES=$(printf '%s\n' "$CHANGED_FILES" | cut -d/ -f1 | sort -u || true)
 
             if printf '%s\n' "$CHANGED_FILES" | grep -Eq '(^|/)render\.sh$|(^|/)Dockerfile$'; then
-              CHANGED_PROFILES=$(ls -d CV-*/ 2>/dev/null | sed 's#/$##' || true)
+              CHANGED_PROFILES=$(find . -maxdepth 2 -name "cv.yaml" | cut -d/ -f2 | sort -u || true)
             fi
             
             if [ -z "$CHANGED_PROFILES" ]; then
@@ -64,7 +67,7 @@ jobs:
               done
             fi
           else
-            for DIR in CV-*/ ; do
+            for DIR in */ ; do
               PROFILE=$(basename "$DIR")
               if [ -f "$DIR/cv.yaml" ]; then
                 echo "Compiling profile: $PROFILE..."
@@ -73,9 +76,22 @@ jobs:
             done
           fi
 
-      - name: Upload PDF Artifacts
-        if: always()
-        uses: actions/upload-artifact@v4
+      - name: Prepare Public Directory
+        run: |
+          mkdir -p public/PDFs
+          if ls PDFs/*.pdf 1> /dev/null 2>&1; then
+            mv PDFs/*.pdf public/PDFs/
+          fi
+
+      - name: Generate Catalog JSON
+        env:
+          GITHUB_REPOSITORY_OWNER: ${{ github.repository_owner }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: node scripts/generate-catalog.js
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          name: Generated_Resumes
-          path: PDFs/*.pdf
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          force_orphan: true
