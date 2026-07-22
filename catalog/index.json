@@ -1,0 +1,30 @@
+[
+  {
+    "id": "CV-Angel-Cecilio-Fullstack-EN",
+    "role": "Fullstack",
+    "language": "EN",
+    "url": "https://angelscatman.github.io/render-cv/PDFs/CV-Angel-Cecilio-Fullstack-EN.pdf",
+    "lastUpdated": "2026-07-22T21:52:50.795Z"
+  },
+  {
+    "id": "CV-Angel-Cecilio-Fullstack",
+    "role": "Fullstack",
+    "language": "ES",
+    "url": "https://angelscatman.github.io/render-cv/PDFs/CV-Angel-Cecilio-Fullstack.pdf",
+    "lastUpdated": "2026-07-22T21:52:50.795Z"
+  },
+  {
+    "id": "CV-Angel-Cecilio-Ing-Sistemas",
+    "role": "Ing-Sistemas",
+    "language": "ES",
+    "url": "https://angelscatman.github.io/render-cv/PDFs/CV-Angel-Cecilio-Ing-Sistemas.pdf",
+    "lastUpdated": "2026-07-22T21:52:50.795Z"
+  },
+  {
+    "id": "CV-Angel-Cecilio-Mobile",
+    "role": "Mobile",
+    "language": "ES",
+    "url": "https://angelscatman.github.io/render-cv/PDFs/CV-Angel-Cecilio-Mobile.pdf",
+    "lastUpdated": "2026-07-22T21:52:50.795Z"
+  }
+]
